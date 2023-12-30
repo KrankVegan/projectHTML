@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CDN de font-awesome -->
+    <!-- CDN son las siglas para Content Delivery Network (Red de Distribución de Contenidos) y, tal como su nombre lo indica, se trata de una red de servidores encargada de distribuir contenidos en Internet de manera más rápida y eficiente gracias a una serie de POPs (Puntos de Presencia) situados alrededor del mundo. -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <title>Mi portafolio</title>
+  </head>
+  <body>
+    <main>
+      <!-- Encabezado -->
+      <header>
+        <!-- Barra de navegación principal -->
+        <nav>
+          <div class="container">
+            <div class="logo">
+              <a href="index.html">M<span>M</span></a>
+            </div>
+
+            <div class="links">
+              <ul>
+                <li>
+                  <a href="#header">Home</a>
+                </li>
+                <li>
+                  <a href="#services">Servicios</a>
+                </li>
+                <li>
+                  <a href="#gustos">Gustos</a>
+                </li>
+                <li>
+                  <a href="#contact">Contácto</a>
+                </li>
+                <li>
+                  <a
+                    href="https://wa.me/+573013269444"
+                    target="_blank"
+                    class="active"
+                    >WhatsApp</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Menu hamburguesa para agregar en movil -->
+            <div class="hamburger-menu">
+              <i class="fas fa-bars fa-lg"></i>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Contenido para el header -->
+        <div class="header-content">
+          <div class="container grid-2">
+            <div class="column-1">
+              <!-- Titulo principal -->
+              <h1 class="header-title">Miguel <span>Martinez</span></h1>
+              <p class="text">
+                Hola, soy Miguel A Martinez C, ingeniero electrónico de la UNAL Manizales. 
+                Tengo experiencia como auditor de instalaciones solares. Estudio remotamente programación, sé hablar español, inglés y tengo un B1 en proeficiencia en alemán.
+              </p>
+              <!-- Link to Linkedin-->
+              <div class="wrapper">             
+                <a href="https://www.linkedin.com/in/miguel-a-martinez-c-b408b9281/" target="_blank">
+                <button class="btn"> Linkedin  </button>
+              </div>
+              </a>
+            </div>
+            <!-- Imagen principal para el header -->
+            <div class="column-2 image">
+              <img
+                src="./img/shapes/elec.svg"
+                class="points points2"
+                alt=""
+              />
+              <img src="./img/myperson.png" class="img-element z-index" alt=""/>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Sección de servicios -->
+
+      <section class="services section" id="services">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="Lo que hago">Servicios</h3>
+            <p class="text">
+              A continuación menciono algunos de los trabajos que puedo afrontar.
+            </p>
+          </div>
+
+          <div class="cards">
+            <div class="card-wrap">
+              <div class="card" data-card="UI/UX">
+                <div class="card-content z-index">
+                  <img src="./img/language.svg" class="icon" alt="" />
+                  <h3 class="title-sm">Trabajo como Traductor</h3>
+                  <p class="text">
+                    Cuento con Español como lengua materna, así como un C1 certificado en Inglés y pude culminar un B1 en el Colombo Aleman de Manizales.
+                  </p>
+                  <a href="https://www.efset.org/cert/42PS5k" class="btn small" target="_blank">Ver más</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wrap">
+              <div class="card" data-card="Code">
+                <div class="card-content z-index">
+                  <img src="./img/panel.svg" class="icon" alt="" />
+                  <h3 class="title-sm">Auditor de Instalaciones Solares</h3>
+                  <p class="text">
+                    He tenido experiencia trabajando como inspector de Instalaciones de Paneles solares con la empresa <b> Sunergy Solar  </b>
+                  </p>
+                  <a href="https://gosunergy.com/" class="btn small" target="_blank">Ver más</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wrap">
+              <div class="card" data-card="App">
+                <div class="card-content z-index">
+                  <img src="./img/cod.svg" class="icon" alt="" />
+                  <h3 class="title-sm">Programador</h3>
+                  <p class="text">
+                    Actualmente, estudio por mi cuenta programación en general. Tengo experiencia manejando lenguajes como Python, C++, Arduino y JavaScript.
+                  </p>
+                  <a href="https://github.com/KrankVegan/KrankVegan/blob/main/Proyecto_analitica_Final_BACKUP.ipynb" class="btn small" target="_blank">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- Sección gustos -->
+
+
+      <section class="gustos section" id="gustos">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="¿ Que cosas Me Interesan ?">
+              Gustos Personales
+            </h3>
+          </div>
+
+          <div class="gustos-content grid-2">
+            <div class="column-1 reviews">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide review">
+                    <i class="fas fa-quote-left quote"></i>
+                  </div>
+                  <div class="wrapper">
+                    <h3 class="review-name">Inteligencia Artificial</h3>
+                  </div>
+                  <div class="swiper-slide review">
+                    <p class="review-text">
+                      Me interesa el futuro que se prevé con el uso de la inteligencia artificial.
+                      El uso de grandes modelos de IA para generación de texto, imágenes y video han motivado en mí el optimismo hacia 
+                      el futuro que espero que pueda vivir en mi tiempo en esta tierra. 
+                    </p>
+                    <div class="rate">
+                      <i class="fas fa-bars"></i>
+                      <i class="fas fa-bars"></i>
+                      <i class="fas fa-bars"></i>
+                      <i class="fas fa-bars"></i>
+                      <i class="fas fa-bars"></i>
+                    </div>
+                  </div>
+                  <div class="wrapper">
+                    <h3 class="review-name">Video juegos</h3>
+                  </div>
+
+                  <div class="swiper-slide review">
+                    <p class="review-text">
+                      Me gustan los videojuegos en forma general debido a las historias, interactividad, creación y diferentes ámbitos que estos mundos virtuales ofrecen.
+                      Entre mis videojuegos favoritos están <strong>Fall out: New Vegas, BioSchock, GTA: San Andreas, Hollow Knight y Darkest Dungeon  </strong>.
+                    </p>
+                    <div class="rate">
+                      <i class="fas fa-bars"></i>
+                      <i class="fas fa-bars"></i>
+                      <i class="fas fa-bars"></i>
+                      <i class="fas fa-bars"></i>
+                      <i class="fas fa-bars"></i>
+                    </div>
+
+                    
+                    <div class="wrapper">
+                      <div class="review-info">
+                        <h3 class="review-name">Otros gustos personales:</h3>
+                        <div class="swiper-slide review">
+                        <h5 class="review-job">Edición de imágenes, el dibujo, colección de cartas de Yu Gi Oh, etc</h5>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="column-2 image">
+              <iframe width="650" height="400" src="https://www.youtube.com/embed/STgepAeFZas?si=meVWwgbpNzUilsPt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Sección de contacto -->
+
+      <section class="contact" id="contact">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2900.3051950469217!2d-75.46825079331848!3d5.032816872979471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4765bb072ebd2f%3A0x1298ff8942872156!2sCra.%2033b%20%2397b-2%20a%2097b-22%2C%20Manizales%2C%20Caldas!5e0!3m2!1sen!2sco!4v1703889892732!5m2!1sen!2sco"
+          width="100%"
+          height="350"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="container">
+          <div class="contact-box">
+            <div class="contact-info">
+              <h3 class="title">Ponte en contacto</h3>
+              <p class="text">
+                Me ubico en la dirección Cra. 33b #97b-2 a 97b-22, Barrio La ENEA
+              </p>
+              <div class="information-wrap">
+                <div class="information">
+                  <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <p class="info-text">Manizales. Colombia</p>
+                </div>
+
+                <div class="information">
+                  <div class="contact-icon">
+                    <i class="fas fa-paper-plane"></i>
+                  </div>
+                  <p class="info-text">miguelancho01@hotmail.com</p>
+                </div>
+
+                <div class="information">
+                  <div class="contact-icon">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <p class="info-text">+57 301 32 69444</p>
+                </div>
+              </div>
+            </div>
+
+            <form class="contact-form" action="https://formsubmit.io/send/miguelancho01@hotmail.com" > <!-- manda la infomracion del form a mi correo, usando https://formsubmit.io/-->
+              <h3 class="title">Contáctame</h3>
+              <div class="row">
+                <input type="text" class="contact-input" placeholder="Nombre" />
+                <input
+                  type="text"
+                  class="contact-input"
+                  placeholder="Apellido"
+                />
+              </div>
+
+              <div class="row">
+                <input
+                  type="text"
+                  class="contact-input"
+                  placeholder="Celular"
+                />
+                <input type="email" class="contact-input" placeholder="Email" />
+              </div>
+
+              <div class="row">
+                <textarea
+                  name="message"
+                  class="contact-input textarea"
+                  placeholder="Mensaje"
+                ></textarea>
+              </div>
+              <input class="btn" type="submit" value="enviar">
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="hireme" id="hireme">
+        <div class="container">
+          <h3 class="title">Hablemos de tu proyecto</h3>
+          <p class="text">
+            Escribe a mi WhatsApp para saber mas!
+          </p>
+          <a href="https://wa.me/+573013269444" target="_blank" class="btn"
+            >WhatsApp</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Sección pie de página -->
+    <footer class="footer">
+      <div class="container">
+        <div class="grid-4">
+          <div class="grid-4-col footer-about">
+            <h3 class="title-sm">Acerca de</h3>
+            <p class="text">
+              Página de presentación de mi persona.
+            </p>
+          </div>
+
+          <div class="grid-4-col footer-links">
+            <h3 class="title-sm">Links</h3>
+            <ul>
+              <li>
+                <a href="#services">Servicios</a>
+              </li>
+              <li>
+                <a href="#gustos">Gustos</a>
+              </li>
+              <li>
+                <a href="#contact">Contacto</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grid-4-col footer-links">
+            <h3 class="title-sm">Servicios</h3>
+            <ul>
+              <li>
+                <a href="https://www.efset.org/cert/42PS5k" target="_blank">Traductor</a>
+              </li>
+              <li>
+                <a href="https://gosunergy.com/" target="_blank">Auditor de Instalaciones Solares</a>
+              </li>
+              <li>
+                <a href="https://github.com/KrankVegan/KrankVegan/blob/main/Proyecto_analitica_Final_BACKUP.ipynb" target="_blank">Programador</a>
+              </li>
+            </ul>
+          </div>
+          <div class="wrapper">
+            <div class="grid-4-col footer-newstletter">
+              <h3 class="title-sm">¡Gracias por Visitar la Pagina!</h3>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-footer">
+          <div class="copyright">
+            <p class="text">
+              Copyright&copy;2023 | Hecho por
+              <a href="#" class="split-text"> Mauricio Muñoz </a>
+            </p>
+            <p class="text">
+              , Editado por <strong> Miguel Martinez </strong>
+            </p>
+          </div>
+
+          <div class="followme-wrap">
+            <div class="followme">
+              <h3>Sígueme</h3>
+              <span class="footer-line"></span>
+              <div class="social-media">
+                <a href="https://www.facebook.com/miguel012snigg" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/kranvegan_1092/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/miguel-a-martinez-c-b408b9281/" target="_blank">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
